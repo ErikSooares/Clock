@@ -20,10 +20,16 @@ li{
 #horarioAtualBtn{
     position: relative;
     right: 50px;
+
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 #cronometroBtn{
     position: relative;
     left: 10px;
+
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 li:hover{
@@ -76,6 +82,9 @@ li:hover{
     padding: 5px;
     width: 100px;
     margin: auto;
+
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 #btnIniciarCronometro:hover{
     transition: 0.2s;
