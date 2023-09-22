@@ -1,19 +1,14 @@
 var horarioAtualBtn = document.getElementById("horarioAtualBtn");
 var horaAtual = document.getElementById("horaAtual");
 var cronometro = document.getElementById("cronometro");
-var pomodoro = document.getElementById("pomodoro");
 
 horarioAtualBtn.addEventListener('click', function(){
     horaAtual.style.cssText = (
-        "transtion: 0.2s;" +
+        "transition: 0.2s;" +
         "display: block;"
     )
     cronometro.style.cssText = (
-        "transtion: 0.2s;" +
-        "display: none;"
-    )
-    pomodoro.style.cssText = (
-        "transtion: 0.2s;" +
+        "transition: 0.2s;" +
         "display: none;"
     )
 })
