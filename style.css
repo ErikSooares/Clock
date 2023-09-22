@@ -1,0 +1,97 @@
+html, body{
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #273746;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+}
+#menu{
+    text-align: center;  
+}
+li{
+    transition: 0.2s;
+    display: inline;
+    list-style-type: none;
+
+    cursor: pointer;
+}
+
+#horarioAtualBtn{
+    position: relative;
+    right: 50px;
+}
+#cronometroBtn{
+    position: relative;
+    left: 10px;
+}
+
+li:hover{
+    transition: 0.2s;
+    color: rgb(58, 140, 255);
+}
+#horaAtual{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#hora{
+    transition: 0.2s;
+
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+
+    cursor: default;
+}
+#periodo{
+    cursor: default;
+}
+
+#cronometro{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+#horacronometro{
+    transition: 0.2s;
+
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    cursor: default;
+
+    margin-bottom: 50px;
+
+}
+#btnIniciarCronometro{
+    transition: 0.2s;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 5px;
+    width: 100px;
+    margin: auto;
+}
+#btnIniciarCronometro:hover{
+    transition: 0.2s;
+    color: rgb(58, 140, 255);
+    border: 1px solid rgb(58, 140, 255);;
+}
+
+@media screen and (max-width: 600px){
+    #hora{
+        transition: 0.2s;
+        font-size: 70px;
+    }
+
+    #horacronometro{
+        transition: 0.2s;
+        font-size: 70px;
+        margin-bottom: 40px;
+    }
+}
