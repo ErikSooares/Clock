@@ -1,10 +1,23 @@
+*{
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
 html, body{
     font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #273746;
+    background-color: var(--cor-fundo);
     color: white;
 
     margin: 0;
     padding: 0;
+}
+:root {
+    /* Cores do modo escuro */
+    --cor-fundo: #13131F;
+    --cor-fundo2: #151524;
+    --cor-destaque: #458FD3;
+
+    /* Cores do modo claro */
+    --cor-fundoClaro: #f5f5f5;
 }
 #menu{
     text-align: center;  
@@ -13,28 +26,22 @@ li{
     transition: 0.2s;
     display: inline;
     list-style-type: none;
-
+    padding: 7px;
     cursor: pointer;
+    border: 1px solid transparent;
 }
-
+li:hover{
+    transition: 0.2s;
+    color: var(--cor-destaque);
+    border: 1px solid var(--cor-destaque);
+}
 #horarioAtualBtn{
     position: relative;
     right: 50px;
-
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
 }
 #cronometroBtn{
     position: relative;
     left: 10px;
-
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-}
-
-li:hover{
-    transition: 0.2s;
-    color: rgb(58, 140, 255);
 }
 #horaAtual{
     position: absolute;
@@ -51,6 +58,9 @@ li:hover{
     font-size: 100px;
 
     cursor: default;
+}
+#hora:hover{
+    color: var(--cor-destaque);
 }
 #periodo{
     cursor: default;
@@ -72,8 +82,10 @@ li:hover{
     font-size: 100px;
     cursor: default;
 
-    margin-bottom: 50px;
-
+    margin-bottom: 23px;
+}
+#horacronometro:hover{
+    color: var(--cor-destaque);
 }
 #btnIniciarCronometro{
     transition: 0.2s;
@@ -82,14 +94,11 @@ li:hover{
     padding: 5px;
     width: 100px;
     margin: auto;
-
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
 }
 #btnIniciarCronometro:hover{
     transition: 0.2s;
-    color: rgb(58, 140, 255);
-    border: 1px solid rgb(58, 140, 255);;
+    color: var(--cor-destaque);
+    border: 1px solid var(--cor-destaque);
 }
 
 @media screen and (max-width: 600px){
@@ -97,10 +106,9 @@ li:hover{
         transition: 0.2s;
         font-size: 70px;
     }
-
     #horacronometro{
         transition: 0.2s;
         font-size: 70px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 }
